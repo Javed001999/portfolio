@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.shadow-red {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+.shadow-red {
+  filter: drop-shadow(0 0 200px red);
+}
+
+.border-animates {
+  animation: borderAnimation 2s infinite alternate;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-width: 5px;
+    border-color: #B91C1C;
+  }
+
+  50% {
+    border-width: 5px;
+    border-color: #2AC764;
+  }
+
+  100% {
+    border-width: 5px;
+    border-color: #3B82F6;
+  }
+}
+
+.border-animate {
+  animation: glowing 2s infinite ease-in-out;
+
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #fa4949, 0 0 20px #fa4949, 0 0 30px #fa4949;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #fa4949, 0 0 25px #fa4949, 0 0 40px #fa4949;
+  }
+
+  100% {
+    box-shadow: 0 0 20px #fa4949, 0 0 30px #fa4949, 0 0 50px #fa4949;
+  }
+}
+
+
+
